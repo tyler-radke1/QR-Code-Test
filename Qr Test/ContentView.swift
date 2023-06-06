@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import CodeScanner
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("This is my first view!")
+            
+            Button("Press to svan") {
+                scanButtonPressed()
+            }
         }
         .padding()
+    }
+    
+    func scanButtonPressed() {
+        
     }
 }
 

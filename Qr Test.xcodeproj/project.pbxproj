@@ -11,6 +11,7 @@
 		9FA677AC2A2FBD890051D163 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA677AB2A2FBD890051D163 /* ContentView.swift */; };
 		9FA677AE2A2FBD8B0051D163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA677AD2A2FBD8B0051D163 /* Assets.xcassets */; };
 		9FA677B12A2FBD8B0051D163 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA677B02A2FBD8B0051D163 /* Preview Assets.xcassets */; };
+		9FA677B92A2FBF6C0051D163 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA677B82A2FBF6C0051D163 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA677B92A2FBF6C0051D163 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Qr Test";
+			packageProductDependencies = (
+				9FA677B82A2FBF6C0051D163 /* CodeScanner */,
+			);
 			productName = "Qr Test";
 			productReference = 9FA677A62A2FBD890051D163 /* Qr Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9FA6779D2A2FBD890051D163;
+			packageReferences = (
+				9FA677B72A2FBF6C0051D163 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 9FA677A72A2FBD890051D163 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,6 +287,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FA677B72A2FBF6C0051D163 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FA677B82A2FBF6C0051D163 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FA677B72A2FBF6C0051D163 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FA6779E2A2FBD890051D163 /* Project object */;
 }
