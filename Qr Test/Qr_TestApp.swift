@@ -11,7 +11,7 @@ import SwiftUI
 struct Qr_TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyViewsTabView()
         }
     }
 }

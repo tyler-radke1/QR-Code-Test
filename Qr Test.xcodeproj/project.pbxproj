@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F8B687E2A30EC1100B6B9C1 /* MySecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B687D2A30EC1100B6B9C1 /* MySecondView.swift */; };
+		9F8B68822A30F29000B6B9C1 /* QRCodeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B68812A30F29000B6B9C1 /* QRCodeCreator.swift */; };
+		9F8B68842A30F29B00B6B9C1 /* MyViewsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B68832A30F29B00B6B9C1 /* MyViewsTabView.swift */; };
+		9F8B68862A30FE7800B6B9C1 /* Team Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B68852A30FE7800B6B9C1 /* Team Struct.swift */; };
 		9FA677AA2A2FBD890051D163 /* Qr_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA677A92A2FBD890051D163 /* Qr_TestApp.swift */; };
-		9FA677AC2A2FBD890051D163 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA677AB2A2FBD890051D163 /* ContentView.swift */; };
+		9FA677AC2A2FBD890051D163 /* MyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA677AB2A2FBD890051D163 /* MyMainView.swift */; };
 		9FA677AE2A2FBD8B0051D163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA677AD2A2FBD8B0051D163 /* Assets.xcassets */; };
 		9FA677B12A2FBD8B0051D163 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA677B02A2FBD8B0051D163 /* Preview Assets.xcassets */; };
 		9FA677B92A2FBF6C0051D163 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA677B82A2FBF6C0051D163 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F8B687D2A30EC1100B6B9C1 /* MySecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySecondView.swift; sourceTree = "<group>"; };
+		9F8B68812A30F29000B6B9C1 /* QRCodeCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeCreator.swift; sourceTree = "<group>"; };
+		9F8B68832A30F29B00B6B9C1 /* MyViewsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewsTabView.swift; sourceTree = "<group>"; };
+		9F8B68852A30FE7800B6B9C1 /* Team Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team Struct.swift"; sourceTree = "<group>"; };
 		9FA677A62A2FBD890051D163 /* Qr Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qr Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA677A92A2FBD890051D163 /* Qr_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qr_TestApp.swift; sourceTree = "<group>"; };
-		9FA677AB2A2FBD890051D163 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FA677AB2A2FBD890051D163 /* MyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainView.swift; sourceTree = "<group>"; };
 		9FA677AD2A2FBD8B0051D163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA677B02A2FBD8B0051D163 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F8B68872A30FE8200B6B9C1 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				9F8B68852A30FE7800B6B9C1 /* Team Struct.swift */,
+			);
+			path = "Data Objects";
+			sourceTree = "<group>";
+		};
 		9FA6779D2A2FBD890051D163 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				9FA677A92A2FBD890051D163 /* Qr_TestApp.swift */,
-				9FA677AB2A2FBD890051D163 /* ContentView.swift */,
+				9F8B68832A30F29B00B6B9C1 /* MyViewsTabView.swift */,
+				9FA677AB2A2FBD890051D163 /* MyMainView.swift */,
+				9F8B68812A30F29000B6B9C1 /* QRCodeCreator.swift */,
+				9F8B687D2A30EC1100B6B9C1 /* MySecondView.swift */,
 				9FA677AD2A2FBD8B0051D163 /* Assets.xcassets */,
+				9F8B68872A30FE8200B6B9C1 /* Data Objects */,
 				9FA677AF2A2FBD8B0051D163 /* Preview Content */,
 			);
 			path = "Qr Test";
@@ -145,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA677AC2A2FBD890051D163 /* ContentView.swift in Sources */,
+				9F8B68862A30FE7800B6B9C1 /* Team Struct.swift in Sources */,
+				9F8B68842A30F29B00B6B9C1 /* MyViewsTabView.swift in Sources */,
+				9F8B68822A30F29000B6B9C1 /* QRCodeCreator.swift in Sources */,
+				9FA677AC2A2FBD890051D163 /* MyMainView.swift in Sources */,
+				9F8B687E2A30EC1100B6B9C1 /* MySecondView.swift in Sources */,
 				9FA677AA2A2FBD890051D163 /* Qr_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +306,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qr Test/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to scan QR Codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,12 +336,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qr Test/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to scan QR Codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
