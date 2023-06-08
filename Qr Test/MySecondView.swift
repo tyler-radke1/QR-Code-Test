@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct MySecondView: View {
+    @State var teamScanned: Team?
     var body: some View {
-        Text("Some QR data was detected and sent you here!")
+        if let teamScanned {
+            Text("Qr code scanned for \(teamScanned.name)")
+        } else {
+            Text("Failed to read team")
+        }
     }
 }
 
 
 struct MySecondView_Previews: PreviewProvider {
     static var previews: some View {
-        MySecondView()
+        MySecondView(teamScanned: Team(name: "Dummy team"))
     }
 }

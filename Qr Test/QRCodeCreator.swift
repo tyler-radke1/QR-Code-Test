@@ -52,15 +52,16 @@ struct QRCodeCreator: View {
         //Render images
         let renderer = ImageRenderer(content:
         ForEach(teamKeys, id: \.self) { key in
-            HStack {
+            HStack(alignment: .top) {
                 Text(key)
-                
+               
                 if let uiImage = teamsDictionary[key] {
-                    Image(uiImage: uiImage)
-                        //.interpolation(.none)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 100)
+                    
+//                    Image(uiImage: uiImage)
+//                        .interpolation(.none)
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 100, height: 100)
                 }
                 
             }

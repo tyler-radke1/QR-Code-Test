@@ -14,6 +14,7 @@ struct MyMainView: View {
     
     @State private var isShowingScanner = false
     @State private var isShowingSecondView = false
+    @State private var teamScanned: Team?
     
     var body: some View {
         VStack {
@@ -25,13 +26,13 @@ struct MyMainView: View {
         }
         .padding()
         .sheet(isPresented: $isShowingScanner) {
-            CodeScannerView(codeTypes: [.qr], simulatedData: "Testing") { result in
+            CodeScannerView(codeTypes: [.qr]) { result in
                 handleScan(result: result)
             }
         }
         
         .sheet(isPresented: $isShowingSecondView, content: {
-            MySecondView()
+            MySecondView(teamScanned: teamScanned)
         })
         
     }
@@ -47,11 +48,18 @@ struct MyMainView: View {
         switch result {
         case .success(let result):
             let string = result.string
-            print(string)
-            isShowingSecondView = true
+            handleScanString(string: string)
         case .failure(let error):
             print("\(error.localizedDescription)")
         }
+    }
+    
+    private func handleScanString(string: String) {
+        let scannedTeam = Team.dummyTeams.first(where: { $0.id.uuidString == string })
+        
+        teamScanned = scannedTeam
+        
+        isShowingSecondView = true
     }
 }
 
