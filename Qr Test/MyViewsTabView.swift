@@ -23,6 +23,8 @@ struct MyViewsTabView: View {
     }
 }
 
-#Preview {
-    MyViewsTabView()
+struct MyViewsTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyViewsTabView()
+    }
 }

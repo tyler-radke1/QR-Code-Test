@@ -117,6 +117,8 @@ struct QRCodeCreator: View {
     }
 }
 
-#Preview {
-    QRCodeCreator()
+struct RestaurantsView_Previews: PreviewProvider {
+    static var previews: some View {
+        QRCodeCreator()
+    }
 }
